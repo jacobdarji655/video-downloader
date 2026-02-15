@@ -1,0 +1,10 @@
+video-downloader/
+├── README.md
+├── backend/
+│   ├── main.py
+│   └── requirements.txt
+├── frontend/
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
+└── downloads/
