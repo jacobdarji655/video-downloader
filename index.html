@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Downloader - By Your Father</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎥 Video Downloader</h1>
+        <p class="subtitle">Paste any video link to download</p>
+        
+        <div class="input-section">
+            <input 
+                type="text" 
+                id="video-url" 
+                placeholder="https://www.youtube.com/watch?v=..."
+            >
+            <button id="get-info" class="primary-btn">Get Video Info</button>
+        </div>
+        
+        <div id="loading" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Fetching video information...</p>
+        </div>
+        
+        <div id="error-message" class="error" style="display: none;"></div>
+        
+        <div id="video-preview" class="video-preview" style="display: none;">
+            <div class="thumbnail-container">
+                <img id="video-thumbnail" src="" alt="Video thumbnail">
+            </div>
+            
+            <div class="video-details">
+                <h3 id="video-title"></h3>
+                <p id="video-uploader"></p>
+                <p id="video-duration"></p>
+            </div>
+            
+            <div class="format-section">
+                <h4>Select Quality:</h4>
+                <select id="format-options" class="format-select"></select>
+                
+                <div class="download-buttons">
+                    <button id="download-video-btn" class="download-btn">📹 Download Video</button>
+                    <button id="download-mp3-btn" class="mp3-btn">🎵 Download MP3</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="downloading" class="downloading" style="display: none;">
+            <p>Your download will start soon...</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Made with ❤️ by your father's guidance</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
